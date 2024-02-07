@@ -2,26 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+#img-fundo{
+  background-image: url('../../public/fundo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+#scroll-list::-webkit-scrollbar{
+  /* display:; */
+  width: 8px;
+  background-color: #0a0a0a;
+  border-radius: 0px 10px 10px 0px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+#scroll-list::-webkit-scrollbar-thumb{
+  background-color: #404040;
+  border: 3px solid #0a0a0a;
+  border-radius: 10px;
 }
